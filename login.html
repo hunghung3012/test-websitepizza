@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js" defer></script>
+</head>
+<body>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<div class="form">
+			<h1>Tạo Tài Khoản</h1>
+           
+			<input class="name_input_signup" type="text" placeholder="Name" />
+			<input class="email_input_signup" type="email" placeholder="Email" />
+			<input class="pass_input_signup" type="password" placeholder="Password" />
+			<button class="sign-up">Đăng Ký</button>
+            <p class="error error2">Nhập đúng định dạng gmail</p>
+		</div>
+	</div>
+	<div class="form-container sign-in-container">
+		<div class="form">
+			<h1>Đăng Nhập</h1>
+           
+			<input class="email_input" type="email" placeholder="Email" />
+			<input class="password_input"  type="password" placeholder="Password" />
+			<a href="#">Quên Mật Khẩu?</a>
+			<button class="sign-in">Đăng Nhập</button>
+            <p class="error error1">Sai Tài Khoản Hoặc Mật Khẩu</p>
+		</div>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Chào mừng!</h1>
+				<p>Hãy đăng nhập nếu bạn đã có một tài khoản nha !!!</p>
+				<button class="ghost" id="signIn">Đăng Nhập</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Chào bạn!</h1>
+				<p>Hãy tạo một tài khoản để trải nghiệm website</p>
+				<button class="ghost" id="signUp">Đăng Ký Ngay</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,413 @@
+@import url(//db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text);
+
+.test_ani {
+	/* transform: translateY(-100px); */
+	animation: change 0.5s linear;
+}
+@keyframes change {
+	0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.intro  {
+	height: 500px;
+	position: relative;
+}
+.intro img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.intro_text {
+	position: absolute;
+	bottom: 30%;
+	left: 10%;
+	color:rgb(231, 214, 214);
+	font-weight: bold;
+	
+	
+	/* padding: 50px; */
+}
+.intro_text .text_title {
+	font-size: 90px;
+	font-family: 'Titan One', cursive;
+	color: #d5423f;
+}
+.intro_text .text_sub {
+	font-size: 30px;
+	line-height: 1.9;
+}
+.intro_sub_item1 {
+	font-size: 35px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	padding: 12px;
+}
+
+.intro_sub_item1::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	background-color: #F68422;
+	left: 50%;
+	width: 40px;
+	height: 3px;
+	transform: translateX(-50%);
+
+}
+.intro_sub_item2 {
+	font-size:16px;
+	text-align: center;
+	padding: 20px;
+	line-height: 1.2;
+	
+}
+.find-topic_button  {
+	justify-content: center;
+	gap: 20px;
+	/* margin: 20px 0px 20px 0px; */
+	padding-bottom: 70px;
+}
+.find-topic_button  p{
+	width: 120px;
+	height: 48px;
+	cursor: pointer;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: rgb(236, 145, 80);
+	font-family: 'Inter', sans-serif;
+	color: rgb(243, 240, 240);
+
+
+
+}
+.blog_item1 {
+	/* background-color: rgb(191, 186, 186); */
+	padding: 20px 0px;
+}
+.blog_item1_grid {
+	background-color: white;
+	box-shadow: rgba(162, 167, 173, 0.768) 0px 8px 24px;
+}
+.item1_img {
+	height: 700px;
+
+}
+.item1_text {
+	margin-top: 30px;
+	color: rgb(11, 11, 11);
+	font-size: 20px;
+	line-height: 1.6;
+	/* min-height: 600px; */
+	padding: 20px 100px !important;
+	/* background-color: red; */
+}
+.item1_text_sub {
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+ .sub1 {
+	font-size: 40px;
+	color: black;
+	font-weight: bold;
+
+	
+}
+.sub2{
+	color:rgb(181, 178, 178) ;
+	margin-top: 25px;
+	
+	
+}
+ .sub3 {
+	font-weight: bold;
+	color: black;
+	margin-top: 120px;
+}
+.sub4 {
+	color:rgb(197, 197, 197) ;
+	margin-top: 10px;
+}
+.sub5 {
+	background-color:rgb(244, 223, 130) ;
+	color: black;
+	font-weight: bold;
+	margin-top: 100px;
+	width: 120px;
+	height: 70px;
+}
+
+
+
+.blog_item2_body {
+	display: grid;
+	grid-template-columns: 1fr 0.7fr 1fr;
+	grid-template-rows: auto auto auto;
+	font-family: 'Inter', sans-serif;
+ background-color: rgb(250, 253, 249);
+	
+	 /* background-color: red; */
+	/* grid-gap: 25px;
+	 */
+	grid-row-gap: 30px;
+	grid-column-gap: 58px;
+	padding: 128px;
+	grid-template-areas: 
+	"h1 h1 h2"
+	"h1 h1 h3"
+	"h1 h1 h4"
+	;
+}
+
+.title_blog {
+	left: 70px;
+	margin-top: 20px;
+	position: absolute !important;
+	z-index: 2;
+}
+.post_item:nth-child(1) {
+	grid-area: h1;
+}
+.post_item:nth-child(2) {
+	grid-area: h2;
+	display: flex;
+}
+.post_item:nth-child(3) {
+	grid-area: h3;
+	display: flex;
+}
+.post_item:nth-child(4) {
+	grid-area: h4;
+	display: flex;
+}
+.post_item .larger  {
+	height: 450px;
+
+}
+
+.post_item img {
+	border-radius: 10px;
+	/* height: 100%; */
+	width: 100%;
+	height: 140px;
+	object-fit: cover;
+	
+}
+.item_date{
+	font-size: 18px;
+	color: rgb(152, 152, 149);
+}
+.item_title{
+	font-size: 23px;
+	color: rgb(74, 74, 73);
+	font-weight: bold;
+}
+.item_description{
+	font-size: 16px;
+	color: rgb(110, 110, 107);
+}
+.main {
+	gap: 10px;
+	margin-top: 10px;
+}
+.side {
+	width: 60%;
+	/* margin-left: 20px; */
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.item_description {
+	display:-webkit-box;
+	-webkit-line-clamp:3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-word;
+}
+
+
+
+.target_container {
+	position: relative;
+ }
+ .target_container:before {
+	 content: "";
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 filter: blur(5px);
+	  background-image: url(https://img.freepik.com/free-photo/copy-space-italian-food-ingredients_23-2148551732.jpg?w=2000);
+	  background-position: center;
+	  background-repeat: no-repeat;
+	z-index: -1;
+   } 
+ .item_img {
+	 overflow: hidden;
+	 border-radius: 20px;
+	 height: 300px;
+
+ 
+ }
+ .target:hover>.target_item:not(:hover) {
+	 filter: blur(8px);
+ }
+ .target_item:hover .item_img img:hover {
+	transform: scale(1.2);
+	z-index: -1;
+	filter: blur(0);
+ }
+ .target_title {
+	 padding: 60px;
+	 text-align: center;
+	 font-family: 'Inter', sans-serif;
+	 font-size: 50px !important;
+	 /* color: #510202; */
+	 /* color: rgb(54, 142, 20); */
+ }
+ .target_title span {
+	color:rgb(236, 139, 60);
+ }
+ 
+ .target_item .item_img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.3s ease ;
+ }
+ .item_text_title {
+	 text-align: center;
+	 font-size: 30px;
+	 font-weight: bold;
+	 color: rgb(40, 39, 39);
+ } 
+ .item_text_title span{
+color: #F68422;
+ }
+ .target_item .item_text {
+	 padding: 35px 0px;
+ }
+ .target_item .text {
+	 padding : 20px 20px;
+ 
+ }
+/* Chia se khoi nghiep */
+.blog_item3_body {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 0.7fr 1fr;
+	grid-template-rows: auto auto auto;
+	font-family: 'Inter', sans-serif;
+	background-color: rgb(250, 253, 249);
+
+	/* grid-gap: 25px;
+	 */
+	grid-row-gap: 30px;
+	grid-column-gap: 58px;
+	padding: 128px;
+	grid-template-areas: 
+	"h2 h1 h1"
+	"h3 h1 h1"
+	"h4 h1 h1"
+	;
+}
+.post_item3:nth-child(1) {
+	grid-area: h1;
+}
+.post_item3:nth-child(2) {
+	grid-area: h2;
+	display: flex;
+}
+.post_item3:nth-child(3) {
+	grid-area: h3;
+	display: flex;
+}
+.post_item3:nth-child(4) {
+	grid-area: h4;
+	display: flex;
+}
+.post_item3 .larger  {
+	height: 450px;
+	width: 100%;
+
+}
+.post_item3 img {
+	border-radius: 10px;
+
+	width: 300px;
+	height: 140px;
+	object-fit: cover;
+}
+.gmail_blog {
+
+	background-image:linear-gradient(to bottom ,rgba(99, 96, 96, 0.377), rgba(129, 129, 129, 0.092)) ,url(https://www.teahub.io/photos/full/6-62902_food-wallpapers-pizza-food-wallpaper-hd-x-umad.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 150px 70px;
+	
+
+
+
+}
+.gmail_text {
+	font-weight: bold;
+	gap: 20px;
+}
+.gmail_text span:nth-child(1){
+	font-size: 70px;
+	color: rgb(35, 25, 25);
+}
+.gmail_text span:nth-child(2){
+	font-size: 80px;
+	color: rgb(231, 151, 90);
+	text-transform: uppercase;
+	
+}
+.gmail_text span:nth-child(3){
+	font-size: 60px;
+	color: rgb(61, 56, 56);
+}
+.gmail_input {
+	margin-top: 30px;
+}
+.gmail_imput {
+	height: 50px;
+	width: 250px;
+	padding-left: 20px;
+	font-size: 16px;
+
+}
+.gmail_button {
+	height: 50px;
+	width: 120px;
+	background-color: rgba(247, 47, 47, 0.878);
+	font-weight: bold;
+	color: white;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+	margin-left: 30px;
+}
+
+
+

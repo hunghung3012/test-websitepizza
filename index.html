@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bi PIZZA</title>
+    <script
+      src="https://kit.fontawesome.com/7a3de78148.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@0,300;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navfoot.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <script src="js/navfoot.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script type="module" src="js/index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/7a3de78148.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="loader"></div>
+    <div class="all_container">
+      <!-- Menu and cart -->
+      <div class="wrapper">
+        <div id="header">
+          <div class="more_menu">
+            <i class="fa-solid fa-bars bar_mobile_icon"></i>
+            <div class="select_nav_mobile">
+              <span class="remove"><i class="fa-solid fa-xmark"></i></span>
+              <a href="index.html"><p>Home</p></a>
+              <a  href="menu.html"><p>Menu</p></a>
+              <a  href="blog.html"><p>Blog</p></a>
+              <a  href="#"><p>Store</p></a>
+              <a  href="aboutus.html"><p>About us</p></a>
+            
+            </div>
+          </div>
+          <a href="index.html" class="header_logo">
+            <i class="fa-solid fa-pizza-slice icon_logo"></i>
+            <span>PIZZA</span>
+          </a>
+
+          <ul class="main_menu">
+            <li class="menu_item">
+              <a href="index.html" class="active">Home</a>
+            </li>
+            <li class="menu_item">
+              <a href="menu.html">Menu</a>
+            </li>
+            <li class="menu_item">
+              <a href="blog.html">Blog</a>
+            </li>
+            <li class="menu_item"><a href="#">Store</a></li>
+            <li class="menu_item"><a href="aboutus.html">About us</a></li>
+          </ul>
+          <div class="infor_account logo_cart">
+            <div class="quantity__cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p class="quantity__cart-infor">0</p>
+            </div>
+            <div class="account">
+              <div class="option_account">
+                <a href="order.html" >
+                  <p>Đơn Hàng</p></a>
+                <a href="login.html">
+                  <p>Đăng Xuất</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart">
+          <div class="cart__header">
+            <div class="button__back">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+
+            <div class="cart__title">Giỏ hàng</div>
+
+            <div class="cart__quanlity">
+              SL : <span class="quanlity">0</span>
+            </div>
+          </div>
+
+          <div class="cart_body">
+            <div class="list__cart"></div>
+          </div>
+          <div class="cart__footer">
+            <div class="cart__total">
+              <span class="cart__total-title"> Tổng tiền : </span>
+
+              <span class="cart__total-content"> 0 VNĐ </span>
+            </div>
+
+            <a href="cart.html"
+              ><button class="button__buy">Xem chi tiết giỏ hàng</button></a
+            >
+          </div>
+        </div>
+
+        <!-- Menu and cart END -->
+        <div class="slider">
+          <div class="slider_text_container l-8">
+            <p class="slider_text_first">Bi's Pizza Paradise</p>
+            <p class="slider_text_second">
+              Hãy đến và Trải nghiệm cùng nhau với thiên đường Pizza. 
+            </p>
+          </div>
+
+          <div class="list">
+            <div class="item">
+              <video src="video\video_1.mp4" autoplay muted loop></video>
+            </div>
+            <div class="item">
+              <video src="video\video_2.mp4" autoplay muted loop></video>
+            </div>
+            <div class="item">
+              <video src="video\video_3.mp4" autoplay muted loop></video>
+            </div>
+            <div class="item">
+              <video src="video\video_1.mp4" autoplay muted loop></video>
+            </div>
+            <div class="item">
+              <video src="video\video_2.mp4" autoplay muted loop></video>
+            </div>
+          </div>
+          <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+          </div>
+          <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div class="intro_product">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-5 m-12 c-12 animation_item animate_item-left">
+                <div class="intro_img">
+                  <img src="images\index\slide.jpg" alt="" />
+                  <button class="button">Tìm Hiểu Ngay</button>
+                </div>
+              </div>
+              <div class="col l-7 m-12 c-12 animation_item animate_item-right">
+                <div class="intro_menu row">
+                  <div class="menu_item col l-4 m-6 c-12">
+                    <div class="item_pizza">
+                      <div class="item_pizza_img">
+                        <img src="images\menu\pizza\pizza (3).png" alt="" />
+                      </div>
+                      <div class="item_pizza_text display_flex">
+                        <div class="pizza_costname">
+                          <p class="pizza_cost_name">
+                            <span>Pizza</span> Hải Sản
+                          </p>
+                          <p class="pizza_cost_text">90.000đ</p>
+                        </div>
+                        <div class="pizza_heart_icon">
+                          <i class="fa-solid fa-heart"></i>
+                        </div>
+                      </div>
+                      <div class="pizza_star-container">
+                        <ul class="pizza_star">
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="menu_item col l-4 m-6 c-12">
+                        <div class="item_pizza item_pizza_sp">
+                          <div class="img_item_pizza_sp">
+                            <img src="images\menu\menu2.jpg" alt="">
+                          </div>
+                        <p class="text_item_pizza_sp"><a href="">Xem thêm</a></p>
+                        </div>
+                      </div> -->
+
+        <div class="slider_second">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col l-6 m-12 c-12 animation_item animate_item-left">
+                <div class="slider_second_title display_flex d-column">
+                  <p class="first_text">ĐẾN TỪ SỰ CHẤT LƯỢNG</p>
+                  <p class="second_text">
+                    <span class="hightlight_text">PIZZA</span> NGON NHẤT<br />TẠI
+                    ĐÂY!
+                  </p>
+                  <p class="text_">
+                    Bạn có biết không? Một miếng pizza không chỉ đơn giản là một
+                    món ăn mà nó còn là một trải nghiệm tuyệt vời đấy! Khi bạn
+                    cắn vào miếng pizza ấy, một thế giới vị ngon mở ra trước mắt
+                    bạn.
+                  </p>
+                  <div class="slider_second_button display_flex">
+                    <p class="button_1">ORDER NOW</p>
+                    <p class="button_2">
+                      SEE THE MENU
+                      <i class="fa-solid fa-angle-right"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-6 m-0 c-0">
+                <div class="images_container animation_item animate_item-top">
+                  <div class="images">
+                    <div class="item" style="--i: 1">
+                      <img src="images\menu\pizza\pizza (9).png" />
+                    </div>
+                    <div class="item" style="--i: 2">
+                      <img src="images\menu\pizza\pizza (5).png" />
+                    </div>
+                    <div class="item" style="--i: 3">
+                      <img src="images\menu\pizza\pizza (6).png" />
+                    </div>
+                    <div class="item" style="--i: 4">
+                      <img src="images\menu\pizza\pizza (7).png" />
+                    </div>
+                    <div class="item" style="--i: 5">
+                      <img src="images\menu\pizza\pizza (8).png" />
+                    </div>
+                    <div class="item" style="--i: 6">
+                      <img src="images\menu\pizza\pizza (10).png" />
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="animation_item animate_item-right"
+                  id="slider_second_prev"
+                >
+                  <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button
+                  class="animation_item animate_item-left"
+                  id="slider_second_next"
+                >
+                  <i class="fa-solid fa-caret-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="banner_container display_flex">
+        <div class="banner display_flex">
+            <div class="banner_img">
+                <img class="banner_img_item" src="images\banner_img.png" alt="">
+            </div>
+            <div class="banner_infor display_flex">
+                <p class="banner_infor_title title">PIZZA <span>NGON TUYỆT HẢO</span></p>
+                <p class="banner_infor_text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, sed! Minus, at laudantium doloremque voluptates eum voluptate laborum magnam porro et debitis temporibus maxime soluta perferendis modi ut ducimus maiores error. Dolore debitis laborum incidunt tempora architecto laboriosam non neque?</p>
+                <button class="banner_infor_button" >Tìm hiểu ngay</button>
+            </div>
+        </div>
+    </div> -->
+        <div class="banner_container">
+          <div class="grid wide">
+            <div class="banner row">
+              <div
+                class="banner_img col l-6 m-12 c-12 animation_item animate_item-left"
+              >
+                <img
+                  class="banner_img_item"
+                  src="images\banner_img1.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="banner_infor col l-6 m-12 c-12 animation_item animate_item-top"
+              >
+                <p class="banner_infor_title">
+                  NHANH TAY <br />
+                  VỚI <span class="specical_banner">ƯU ĐÃI </span>KHỦNG
+                </p>
+                <p class="banner_infor_title_second">
+                  Lựa chọn những ưu đãi <span>cực giá trị</span>
+                </p>
+                <p class="banner_infor_text">
+                  Pizza là một món ăn ngon tuyệt hảo mà không ai có thể cưỡng
+                  lại. Với những lớp bột mỏng và giòn, được phủ đầy ắp những
+                  nguyên liệu đa dạng và hương vị tuyệt vời, pizza là sự kết hợp
+                  hoàn hảo giữa các thành phần tạo nên một trải nghiệm ẩm thực
+                  đáng nhớ.
+                </p>
+                <button class="banner_infor_button">Tìm hiểu ngay</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="advantage">
+          <div class="grid wide">
+            <div class="advantage_title animation_item animate_item-top">
+              <p>TẠI SAO CHỌN <span>CHÚNG TÔI</span></p>
+            </div>
+            <div class="advantage_item item1 row">
+              <div
+                class="item_images item1_images l-6 m-12 c-12 col animation_item animate_item-left"
+              >
+                <img
+                  src="https://aloride.com/wp-content/uploads/2022/03/1643110928.jpeg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="item_text item1_text text l-6 m-12 c-12 col animation_item animate_item-right"
+              >
+                <p class="title">NHANH CHÓNG</p>
+                <p class="detail_text">
+                  Đặt món không tốn nhiều thời gian, nhân viên tiệm pizza sẵn
+                  sàng ghi lại đơn hàng và mang đến sự thỏa mãn ngay lập tức.Quá
+                  trình vượt trội, luôn sẵn sàng hết nmmình vì bạn.
+                </p>
+                <p class="button_contact">LIÊN HỆ NGAY</p>
+              </div>
+            </div>
+
+            <div class="advantage_item item2 row">
+              <div
+                class="item_text item1_text text l-6 m-12 c-12 col animation_item animate_item-right"
+              >
+                <p class="title">SANG TRỌNG</p>
+                <p class="detail_text">
+                  Sự hòa quyện giữa sự sang trọng và gần gũi. Không gian là sự
+                  kết hợp tinh tế giữa các yếu tố hiện đại và truyền thống, tạo
+                  nên một không gian đẳng cấp nhưng vẫn mang đậm chất thân
+                  thiện, ấm cúng.
+                </p>
+                <p class="button_contact">LIÊN HỆ NGAY</p>
+              </div>
+              <div
+                class="item_images item1_images animation_item animate_item-left l-6 m-12 c-12 col"
+              >
+                <img
+                  src="https://design-tribe.com/wp-content/uploads/2019/06/Design-Tribe-Restaurant-Online-Interior-Design-Colorful-Biophilic-Greenery.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="advantage_item item3 row">
+              <div
+                class="item_images item1_images l-6 m-12 c-12 col animation_item animate_item-top"
+              >
+                <img src="images\pizza_advantage.jpg" alt="" />
+              </div>
+              <div
+                class="item_text item1_text text l-6 m-12 c-12 col animation_item animate_item-left"
+              >
+                <p class="title">HIỆN ĐẠI</p>
+                <p class="detail_text">
+                  Chúng tôi luôn đáp ứng các bạn theo những phương pháp hiện đại
+                  nhất, từ cách phục vụ đến từng món ăn của bạn.Hãy ghé thăm
+                  chúng tôi.
+                </p>
+                <p class="button_contact">LIÊN HỆ NGAY</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="target_container">
+          <div class="target_container grid wide">
+            <p class="target_title title animation_item animate_item-top">
+              <span>MỤC TIÊU</span> CỦA CHÚNG TÔI
+            </p>
+
+            <div class="target row">
+              <div
+                class="target_item item1 col l-4 m-6 c-12 animation_item animate_item-top"
+              >
+                <div class="item_img item1">
+                  <img src="images\index\muctieu1.jpg" alt="" />
+                </div>
+                <div class="item_text item1">
+                  <p class="item_text_title"><span>Ngon </span>Miệng</p>
+                  <p class="text">
+                    Thức ăn đảm bảo về cả chất lượng, giúp quý khách sẽ luôn ngon miệng khi được trải nghiệm sản phẩm.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="target_item item2 col l-4 m-6 c-12 animation_item animate_item-top"
+              >
+                <div class="item_img item1">
+                  <img src="images\index\muctieu3.png" alt="" />
+                </div>
+                <div class="item_text item1">
+                  <p class="item_text_title"><span>Hài</span> Lòng</p>
+                  <p class="text">
+                    Khách hàng cảm thấy hài lòng và hạnh phúc sau khi trải nghiệm sản phẩm và dịch vụ của chúng tôi. 
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="target_item item3 col l-4 m-6 c-12 animation_item animate_item-top"
+              >
+                <div class="item_img item1">
+                  <img src="images\index\muctieu2.jpg" alt="" />
+                </div>
+                <div class="item_text item1">
+                  <p class="item_text_title"><span>Uy </span>Tín</p>
+                  <p class="text">
+                    Đáp ứng các yêu cầu và mong đợi của khách hàng một cách đáng tin cậy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="messages-customer_form display_flex ">
+        <div class="messages-customer c-5 col display_flex d-column   ">
+            <p class="messages-customer_title title">
+                THÔNG TIN CỦA BẠN
+            </p>
+            <div class="messages_input display_flex  d-column">
+                <input type="text" class="item item1" placeholder="Họ Và Tên *">
+                <input type="text" class="item item2" placeholder="Email của bạn...">
+                <textarea class="item item3" placeholder="Lời nhắn của bạn"  ></textarea>
+            </div>
+            <div class="messages_button">
+               <button class="messages_button_item">SEND MESSAGE</button> 
+            </div>
+        </div>
+        <div class="messages_thanks c-5">
+            <p class="message_thanks-title title">
+                Ý KIẾN KHÁCH HÀNG
+            </p>
+            <p class="message_thanks-text text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, at aliquam enim vel sapiente neque adipisci consequatur architecto modi cupiditate, nulla libero minus nemo iste quidem optio dolor placeat ipsum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, at aliquam enim vel sapiente neque adipisci consequatur architecto modi cupiditate, nulla libero minus nemo iste quidem optio dolor placeat ipsum?
+            </p>
+        </div>
+    </div> -->
+
+        <div class="messages-customer_form">
+          <div class="grid wide">
+            <div class="row">
+              <div
+                class="messages-customer col l-6 m-12 c-12 animation_item animate_item-left"
+              >
+                <p class="messages-customer_title title">THÔNG TIN CỦA BẠN</p>
+                <div class="messages_input display_flex d-column">
+                  <input
+                    type="text"
+                    class="item item1"
+                    placeholder="Họ Và Tên *"
+                  />
+                  <input
+                    type="text"
+                    class="item item2"
+                    placeholder="Email của bạn..."
+                  />
+                  <!-- <input type="text" class="item item3" placeholder="Lời nhắn của bạn"> -->
+                  <textarea
+                    class="item item3"
+                    placeholder="Lời nhắn của bạn"
+                  ></textarea>
+                </div>
+                <div class="messages_button">
+                  <button class="messages_button_item">SEND MESSAGE</button>
+                </div>
+              </div>
+              <div
+                class="messages_thanks col l-6 m-12 c-12 animation_item animate_item-right"
+              >
+                <p class="message_thanks-title title">Ý KIẾN KHÁCH HÀNG</p>
+                <p class="message_thanks-text text">
+                  Mọi vấn đề xin hãy liên lạc cùng chúng tôi.
+                  Ý Kiến của bạn sẽ là tiềm năng để chúng tôi ngày càng hoàn thiện và phát triển trong tương lai
+                 
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+
+        <!-- FOOTER -->
+        <footer id="foooter_wrapper">
+          <div class="grid wide">
+          <div class="footer_on row">
+            <div class="footer_on_item footer_intro col l-3 m-6 c-12">
+              <p class="text footer_title">CHÚNG TÔI</p>
+              <p class="text">
+                Nơi lý tưởng để bạn tận hưởng một trải nghiệm ẩm thực tuyệt vời và được phục vụ với tâm huyết.Mang đến cho bạn sự hài lòng và đáp ứng mọi yêu cầu của bạn.
+              </p>
+            </div>
+            <div class="footer_on_item footer_store  col l-3 m-6 c-12">
+              <p class="text footer_title">Sản Phẩm</p>
+              <a href="#"><p class="text">PIZZA</p></a>
+              <a href="#"><p class="text">Thức Uống</p></a>
+              <a href="#"><p class="text">Ăn vặt</p></a>
+            </div>
+            <div class="footer_on_item footer_contact  col l-3 m-6 c-12">
+              <p class="text footer_title">LIÊN HỆ</p>
+              <div class="adress">
+                <a class="text" href="https://bom.so/iJufQK"
+                  ><i class="fa-solid fa-location-dot"></i
+                  ><span>Xem chi tiết đường đi</span></a
+                >
+                <p class="text">
+                  Đường Trần Đại Nghĩa,<br />
+                  Trường Đại Học CNTT&TT Việt Hàn
+                </p>
+              </div>
+              <div class="phonenumber">
+                <a href="tel:0999888678" class="text"
+                  ><i class="fa-solid fa-phone"></i>
+                  <span>Phone</span>
+
+                  <p class="text">Mọi thắc mắc, vui lòng gọi số sau:</p>
+                </a>
+                <a href="tel:0999888678"><p class="text">0999888678</p></a>
+              </div>
+            </div>
+            <div class="footer_on_item footer_email  col l-3 m-6 c-12">
+              <p class="text footer_title">EMAIL</p>
+              <p class="email">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="Enter your email" />
+                <a href="mailto:hungvn.22it@vku.udn.vn"
+                  ><i class="fa-solid fa-paper-plane"></i
+                ></a>
+              </p>
+              <div class="footer_icon-contact">
+                <a href="https://www.facebook.com/vonhathungg"
+                  ><i class="fa-brands fa-facebook-messenger"></i
+                ></a>
+                <a href="https://www.facebook.com/vonhathungg"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="mailto:hungvn.22it@vku.udn.vn"
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="footer_under">
+            <p class="text">@ALL RIGHTS Reserved 2022-2023</p>
+            <p class="text">Designed by <a href="#">hungvn.com</a></p>
+          </div>
+       
+        </footer>
+    </div>
+  </body>
+</html>

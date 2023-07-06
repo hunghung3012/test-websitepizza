@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7a3de78148.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/navfoot.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <script src="js/navfoot.js" defer></script>
+    <script src="js/menu.js" defer></script>
+ 
+
+  </head>
+  <body>
+    <!-- Menu and cart -->
+    <div class="wrapper">
+      <div id="header">
+        <div class="more_menu">
+          <i class="fa-solid fa-bars bar_mobile_icon"></i>
+          <div class="select_nav_mobile">
+            <span class="remove"><i class="fa-solid fa-xmark"></i></span>
+            <a href="index.html"><p>Home</p></a>
+            <a  href="menu.html"><p>Menu</p></a>
+            <a  href="blog.html"><p>Blog</p></a>
+            <a  href="#"><p>Store</p></a>
+            <a  href="aboutus.html"><p>About us</p></a>
+          
+          </div>
+        </div>
+        <a href="index.html" class="header_logo">
+          <i class="fa-solid fa-pizza-slice icon_logo"></i>
+          <span>PIZZA</span>
+        </a>
+
+        <ul class="main_menu">
+          <li class="menu_item">
+            <a href="index.html" >Home</a>
+          </li>
+          <li class="menu_item">
+            <a href="menu.html" class="active">Menu</a>
+          </li>
+          <li class="menu_item">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="menu_item"><a href="#">Store</a></li>
+          <li class="menu_item"><a href="aboutus.html">About us</a></li>
+        </ul>
+        <div class="infor_account logo_cart">
+          <div class="quantity__cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p class="quantity__cart-infor">0</p>
+          </div>
+          <div class="account"></div>
+        </div>
+      </div>
+
+      <div class="cart">
+        <div class="cart__header">
+          <div class="button__back">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+
+          <div class="cart__title">Giỏ hàng</div>
+
+          <div class="cart__quanlity">
+            SL : <span class="quanlity">0</span>
+          </div>
+        </div>
+
+        <div class="cart_body">
+          <div class="list__cart"></div>
+        </div>
+        <div class="cart__footer">
+          <div class="cart__total">
+            <span class="cart__total-title"> Tổng tiền : </span>
+
+            <span class="cart__total-content"> 0 VNĐ </span>
+          </div>
+
+          <a href="cart.html"
+            ><button class="button__buy">Xem chi tiết giỏ hàng</button></a
+          >
+        </div>
+      </div>
+
+      <!-- Menu and cart END -->
+
+
+    <div class="intro ">
+      <img
+        src="https://s1.1zoom.me/b6152/819/Pizza_Tomatoes_547600_1920x1080.jpg"
+        alt=""
+      />
+      <p class="intro_text">
+        <span class="text_title">Menu</span>
+        <span class="text_sub"
+          >Lựa Chọn Món Ăn <br /><span class="special_text">TUYỆT</span> Cú
+          Mèo</span
+        >
+      </p>
+    </div>
+    <div class="menu_container">
+      <div class="find animation_item animate_item-right">
+        <input type="text" class="find_input active" placeholder="Nhập từ khóa">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="select_type">
+        <div class="select_button "> <i class="active fa-solid fa-bars"></i> </div>
+        <div class="select_board">
+          <ul class="select_board_list display_flex d-column">
+            <li class="m-item active ">Tất cả</li>
+            <li class="m-item">Combo</li>
+            <li class="m-item">Pizza</li>
+            <li class="m-item">Nước uống</li>
+            <li class="m-item">Thức ăn khác</li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu_wrapper">
+        <div class="grid wide">
+          <div class="row">
+            <div class="sidebar col l-3 m-2 c-0 animation_item animate_item-left">
+              
+                <ul class="sidebar_item  display_flex d-column">
+                  <li class="item active ">Tất cả</li>
+                  <li class="item">Combo</li>
+                  <li class="item">Pizza</li>
+                  <li class="item">Nước uống</li>
+                  <li class="item">Thức ăn khác</li>
+                </ul>
+             
+            </div>
+             
+                
+            <div class="col l-9 m-10 c-12 list_pizza_container animation_item animate_item-right">
+                <!-- DANH SACH THUC PHAM -->
+                <!-- Danh SACH COMBO -->
+           <div class="list_pizza  active ">
+            <p class="thanhDoc">Combo</p>
+              <div class="row list_combo_row">
+              </div>
+        </div>
+                <!-- Danh SACH Pizza -->
+            <div class="list_pizza  active">
+                <p class="thanhDoc">PIZZA</p>
+                  <div class="list_pizza_row row ">
+                    <!-- <div class="menu_item col l-4 m-6 c-12">
+                      <div class="item_pizza">
+                        <div class="item_pizza_img">
+                          <img src="images\pizza\pizza\5NhyUzISTjajnzyM9OjKtD3RN5vBNMh9SuegiIeT.png" alt="" />
+                        </div>
+                        <div class="item_pizza_text display_flex">
+                            <div class="pizza_costname">
+                             <p class="pizza_cost_name">Pizza Hải Sản</p>
+                          <p class="pizza_cost_text">90.000đ</p>
+                        </div>
+                          <div class="pizza_heart_icon">
+                            <i class="fa-regular fa-heart"></i>
+                          </div>
+                        </div>
+                        <div class="pizza_star-container">
+                            <ul class="pizza_star">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+            </div>
+
+           
+         <!-- Danh SACH DRINK -->
+         <div class="list_pizza  active">
+          <p class="thanhDoc">DRINK</p>
+            <div class="row list_drink_row">
+            </div>
+      </div>
+
+
+           <!-- Danh SACH Ăn Thêm -->
+           <div class="list_pizza  active">
+            <p class="thanhDoc">Thức ăn thêm</p>
+              <div class="row list_more_row">
+              </div>
+           </div>
+
+
+
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="infor_product_container"> -->
+    
+        <div class="infor_product_container ">
+          <div class="exit">
+            <i class="fa-sharp fa-regular fa-circle-xmark"></i>
+          </div>
+       
+            <div class="infor_product_img">
+              <img src="images\menu\combo\combo (3).png" alt="">
+            </div>
+            <div class="infor_product_text">
+              <div class="name_title">
+                Gà Rán Ngon Cực
+              </div>
+              <div class="subname_title sub_text">
+                Gà Rán Ngon
+              </div>
+              <div class="note sub_text">
+                <div class="note_title">Ghi chú:</div>
+                <textarea name="" id=""></textarea>
+              </div>
+              <div class="addCart">
+              <p class="quantity_title sub_text">Số Lượng Khẩu Phần</p>
+              <div class="quality_price display_flex">
+                  <div class="quantity display_flex">
+                    <!-- <p class="quantity_button up">+</p> -->
+                    <input type="number" value="1" min="1">
+                    <!-- <p class="quantity_button down">-</p> -->
+                  </div>
+                  <p class="price">
+                    89.000
+                  </p>
+              </div>
+              <div class="addCart_button">
+                <button>THÊM VÀO GIỎ HÀNG</button>
+                <p>HẾT HÀNG</p>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        </div>
+    
+      </div>
+      <div class="overlay"></div>
+  
+      <div class="notice">
+        <div class="notice_text">
+          <i class="fa-regular fa-circle-check"></i>
+          <span >Thêm sản phẩm thành công</span>
+        </div>
+        <div class="go_to_cart">
+          <a href="cart.html">Xem giỏ hàng</a>
+        </div>
+ 
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="foooter_wrapper">
+      <div class="grid wide">
+      <div class="footer_on row">
+        <div class="footer_on_item footer_intro col l-3 m-6 c-12">
+          <p class="text footer_title">CHÚNG TÔI</p>
+          <p class="text">
+            Nơi lý tưởng để bạn tận hưởng một trải nghiệm ẩm thực tuyệt vời và được phục vụ với tâm huyết.Mang đến cho bạn sự hài lòng và đáp ứng mọi yêu cầu của bạn.
+          </p>
+        </div>
+        <div class="footer_on_item footer_store  col l-3 m-6 c-12">
+          <p class="text footer_title">Sản Phẩm</p>
+          <a href="#"><p class="text">PIZZA</p></a>
+          <a href="#"><p class="text">Thức Uống</p></a>
+          <a href="#"><p class="text">Ăn vặt</p></a>
+        </div>
+        <div class="footer_on_item footer_contact  col l-3 m-6 c-12">
+          <p class="text footer_title">LIÊN HỆ</p>
+          <div class="adress">
+            <a class="text" href="https://bom.so/iJufQK"
+              ><i class="fa-solid fa-location-dot"></i
+              ><span>Xem chi tiết đường đi</span></a
+            >
+            <p class="text">
+              Đường Trần Đại Nghĩa,<br />
+              Trường Đại Học CNTT&TT Việt Hàn
+            </p>
+          </div>
+          <div class="phonenumber">
+            <a href="tel:0999888678" class="text"
+              ><i class="fa-solid fa-phone"></i>
+              <span>Phone</span>
+
+              <p class="text">Mọi thắc mắc, vui lòng gọi số sau:</p>
+            </a>
+            <a href="tel:0999888678"><p class="text">0999888678</p></a>
+          </div>
+        </div>
+        <div class="footer_on_item footer_email  col l-3 m-6 c-12">
+          <p class="text footer_title">EMAIL</p>
+          <p class="email">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="text" placeholder="Enter your email" />
+            <a href="mailto:hungvn.22it@vku.udn.vn"
+              ><i class="fa-solid fa-paper-plane"></i
+            ></a>
+          </p>
+          <div class="footer_icon-contact">
+            <a href="https://www.facebook.com/vonhathungg"
+              ><i class="fa-brands fa-facebook-messenger"></i
+            ></a>
+            <a href="https://www.facebook.com/vonhathungg"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="mailto:hungvn.22it@vku.udn.vn"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="footer_under">
+        <p class="text">@ALL RIGHTS Reserved 2022-2023</p>
+        <p class="text">Designed by <a href="#">hungvn.com</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

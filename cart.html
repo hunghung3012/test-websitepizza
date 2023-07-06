@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/navfoot.css">
+    <script src="https://kit.fontawesome.com/7a3de78148.js" crossorigin="anonymous"></script>
+    <script src="js/navfoot.js" defer></script>
+    <script src="js/cart.js" defer></script>
+   
+</head>
+<body>
+   <!-- Menu and cart -->
+   <div class="wrapper">
+    <div id="header">
+      <div class="more_menu">
+        <i class="fa-solid fa-bars bar_mobile_icon"></i>
+        <div class="select_nav_mobile">
+          <span class="remove"><i class="fa-solid fa-xmark"></i></span>
+          <a href="index.html"><p>Home</p></a>
+          <a  href="menu.html"><p>Menu</p></a>
+          <a  href="blog.html"><p>Blog</p></a>
+          <a  href="#"><p>Store</p></a>
+          <a  href="aboutus.html"><p>About us</p></a>
+        
+        </div>
+      </div>
+      <a href="index.html" class="header_logo">
+        <i class="fa-solid fa-pizza-slice icon_logo"></i>
+        <span>PIZZA</span>
+      </a>
+
+      <ul class="main_menu">
+        <li class="menu_item">
+          <a href="index.html" >Home</a>
+        </li>
+        <li class="menu_item">
+          <a href="menu.html">Menu</a>
+        </li>
+        <li class="menu_item">
+          <a href="blog.html">Blog</a>
+        </li>
+        <li class="menu_item"><a href="#">Store</a></li>
+        <li class="menu_item"><a href="aboutus.html">About us</a></li>
+      </ul>
+      <div class="infor_account logo_cart">
+        <div class="quantity__cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p class="quantity__cart-infor">0</p>
+        </div>
+        <div class="account"></div>
+      </div>
+    </div>
+
+    <div class="cart">
+      <div class="cart__header">
+        <div class="button__back">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+
+        <div class="cart__title">Giỏ hàng</div>
+
+        <div class="cart__quanlity">
+          SL : <span class="quanlity">0</span>
+        </div>
+      </div>
+
+      <div class="cart_body">
+        <div class="list__cart"></div>
+      </div>
+      <div class="cart__footer">
+        <div class="cart__total">
+          <span class="cart__total-title"> Tổng tiền : </span>
+
+          <span class="cart__total-content"> 0 VNĐ </span>
+        </div>
+
+        <a href="cart.html"
+          ><button class="button__buy">Xem chi tiết giỏ hàng</button></a
+        >
+      </div>
+    </div>
+
+    <!-- Menu and cart END -->
+  <div class="intro">
+    <img
+      src="https://s1.1zoom.me/b6152/819/Pizza_Tomatoes_547600_1920x1080.jpg"
+      alt=""
+    />
+    <p class="intro_text">
+      <span class="text_title">Cart</span>
+      <span class="text_sub"
+        >Thanh Toán <br /><span class="special_text">Nhanh Chóng</span></span
+      >
+    </p>
+  </div>
+    <div class="shopping-cart">
+        <!-- Title -->
+        
+       
+        <!-- Product #1 -->
+        <!-- <div class="item">
+          <div class="item_detail">
+          <div class="image">
+            <img src="images\menu\pizza\pizza (11).png" alt="" />
+          </div>
+          <div class="description">
+            <span class="name_text">Common Projects</span>
+            <span class="subName_text">White</span>
+          </div>
+        </div>
+          <div class="quantity">
+            <input type="number" name="name" value="1" min="1">
+          </div>
+       
+          <div class="total-price">$549</div>
+          <div class="like_delete">
+            <span class="button_like"><i class="fa-solid fa-heart"></i></span>
+            <span class="button_delete"><i class="fa-sharp fa-solid fa-trash"></i></span>
+          </div>
+        </div> -->
+      </div>
+      <div class="shopping-pay display_flex ">
+        <div class="arrow">
+          <i class="fa-solid fa-circle-chevron-right"></i>
+        </div>
+        <div class="coupon">
+         
+          <p class="coupon_title shopping_title">
+            COUPAN
+          </p>
+      
+        <div class="coupon_text">
+          <p>Enter your coupon code if you have one</p>
+          <div class="coupon-input_button">
+            <input type="text"placeholder="Enter here" spellcheck="false">
+            <button class="coupon_button">CHECK</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="cart_total">
+          <p class="shopping_title">THANH TOÁN</p>
+          <div class="on_total">
+            <div class="sub_total">
+              <span >Tổng tiền</span>
+              <span class="sub_total_item">9.000đ</span>
+            </div>
+            <div class="coupon_total">
+              <span >Voucher</span>
+              <span class="coupon_total_item">0đ</span>
+            </div>
+            <div class="ship">
+              <span>Phí Ship</span>
+              <span class="ship_item">10.000đ</span>
+            </div>
+          </div>
+          <div class="under_total">
+            <div class="total">
+            <span>Tổng tiền cần thanh toán</span>
+            <span class="total_item">25K</span>
+          </div>
+            <p><button>THANH TOÁN NGAY</button>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="notice">
+        <div class="notice_text">
+          <i class="fa-solid fa-circle-xmark"></i>
+          <span >Thêm sản phẩm thành công</span>
+        </div>
+    </div>
+
+      <form class="delivery">
+  
+          <div class="row">
+  
+              <div class="col">
+  
+                  <!-- <h3 class="title">Địa chỉ giao hàng</h3>
+  
+                  <div class="inputBox inputBox_name">
+                      <span>Họ Và Tên :</span>
+                      <input type="text" placeholder="Vo Nhat Hung">
+                  </div>
+                  <div class="inputBox inputBox_email">
+                      <span>Email :</span>
+                      <input type="email" placeholder="example@example.com">
+                  </div>
+                  <div class="inputBox inputBox_address">
+                      <span>Địa chỉ :</span>
+                      <input type="text" placeholder="Trường Đại Học Việt Hàn">
+                  </div>
+                  <div class="inputBox inputBox_phone">
+                      <span>Số điện thoại :</span>
+                      <input type="number" placeholder="01234567">
+                  </div> -->
+                  <h3 class="title">Địa chỉ giao hàng</h3>
+
+                  <div class="inputBox inputBox_name">
+                    <span>Họ Và Tên :</span>
+                    <input type="text" placeholder="Vo Nhat Hung">
+                    <p class="error"></p>
+                  </div>
+                  <div class="inputBox inputBox_email">
+                    <span>Email :</span>
+                    <input type="email" placeholder="example@example.com">
+                    <p class="error"></p>
+                  </div>
+                  <div class="inputBox inputBox_address">
+                    <span>Địa chỉ :</span>
+                    <input type="text" placeholder="Trường Đại Học Việt Hàn">
+                    <p class="error"></p>
+                  </div>
+                  <div class="inputBox inputBox_phone">
+                    <span>Số điện thoại :</span>
+                    <input type="number" placeholder="01234567">
+                    <p class="error"></p>
+                  </div>
+                  
+  
+              </div>
+  
+              <div class="col">
+  
+                  <h3 class="title">payment</h3>
+  
+                  <div class="inputBox">
+                      <span>cards accepted :</span>
+                      <img src="images/card_img.png" alt="">
+                  </div>
+                  <div class="inputBox">
+                      <span>Tên tài khoản :</span>
+                      <input type="text" placeholder="Vo Nhat Hung">
+                  </div>
+                  <div class="inputBox">
+                      <span>Số Tài Khoản :</span>
+                      <input type="number" placeholder="1111-2222-3333-4444">
+                  </div>
+  
+              </div>
+      
+          </div>
+  
+          <button class="submit-btn">Xác Nhận Thanh Toán</button>
+          <button class="off">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+  
+      </form>
+      <div class="overlay"></div>
+
+      <div class="notice_sucess">
+        <div class="notice_sucess_text">
+          <i class="fa-solid fa-truck"></i>
+          <span >Thanh Toán Thành Công,<br>Chờ chúng tôi, Cảm ơn bạn</span>
+        </div>
+        <div class="back_home">
+          <a href="index.html">Quay Lại Trang Chinh</a>
+        </div>
+    </div>
+    
+      
+</body>
+</html>
