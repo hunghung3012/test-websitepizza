@@ -140,11 +140,11 @@
     width: 30px;
     background-color: #E88735;
 }
-/* @media screen and (max-width: 768px){
-    .slider{
-        height: 400px;
+@media (max-width: 740px) { 
+    .slider_second_title{
+        padding: 30px !important;
     }
-} */
+}
 
 
 /*List giới thiệu  */

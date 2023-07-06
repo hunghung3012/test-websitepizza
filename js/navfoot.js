@@ -28,7 +28,6 @@ function updateQuantityMenu() {
    cartItems_menu = localStorage.getItem('cartItems');
    if (cartItems_menu) {
     cartItems_menu = JSON.parse(cartItems_menu);
-    console.log(cartItems_menu);
     quantity_icon.innerText = cartItems_menu.length;
     inforCartMenu(cartItems_menu) ;
     totalMenu(cartItems_menu) ;

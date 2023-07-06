@@ -444,6 +444,19 @@ function find(key) {
 
 }
 
-
+//Button tăng giảm
+const upButton = document.querySelector('.quantity_button.up');
+const downButton = document.querySelector('.quantity_button.down');
+upButton.addEventListener('click', function() {
+    if (parseInt(quantity.value) < parseInt(quantity.max)) {
+        quantity.value = parseInt(quantity.value) + 1;
+      }
+});
+downButton.addEventListener('click', function() {
+    if (parseInt(quantity.value) > parseInt(quantity.min)) {
+        quantity.value = parseInt(quantity.value) - 1;
+      }
+   
+  });
 
 

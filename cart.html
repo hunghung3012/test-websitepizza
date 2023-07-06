@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/navfoot.css">
+    <link rel="stylesheet" href="css/cart.css">
     <script src="https://kit.fontawesome.com/7a3de78148.js" crossorigin="anonymous"></script>
     <script src="js/navfoot.js" defer></script>
     <script src="js/cart.js" defer></script>
@@ -13,6 +13,7 @@
 </head>
 <body>
    <!-- Menu and cart -->
+   <div class="all_container"></div>
    <div class="wrapper">
     <div id="header">
       <div class="more_menu">
@@ -82,8 +83,10 @@
         >
       </div>
     </div>
+  
 
     <!-- Menu and cart END -->
+   
   <div class="intro">
     <img
       src="https://s1.1zoom.me/b6152/819/Pizza_Tomatoes_547600_1920x1080.jpg"
@@ -111,8 +114,10 @@
             <span class="subName_text">White</span>
           </div>
         </div>
-          <div class="quantity">
+          <div class="quantity display_flex">
+            <p class="quantity_button down"><i class="fa-solid fa-minus"></i></p>
             <input type="number" name="name" value="1" min="1">
+              <p class="quantity_button up"><i class="fa-solid fa-plus"></i></p>
           </div>
        
           <div class="total-price">$549</div>
@@ -265,7 +270,8 @@
           <a href="index.html">Quay Lại Trang Chinh</a>
         </div>
     </div>
-    
+  </div></div>
+    <div class="loader"></div>
       
 </body>
 </html>

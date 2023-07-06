@@ -93,4 +93,5 @@ function deleteOrderItem(index,event) {
     list_client.splice(index, 1);
     localStorage.setItem('client', JSON.stringify(list_client));
     event.target.closest('.order_item').remove();
+    location.reload();
 }

@@ -4,7 +4,13 @@ html,
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+   
   }
+  
+.all_container {
+  filter: blur(15px);
+}
   /* .shopping-cart::after {
     content: 'Giỏ Hàng';
     position: absolute;
@@ -104,7 +110,7 @@ html,
  
    .item_detail {
     display: flex;
-    width: 40%;
+    width: 20%;
    }
   .buttons {
     position: relative;
@@ -120,7 +126,7 @@ html,
     height: 17px;
     background: url(&amp;quot;delete-icn.svg&amp;quot;) no-repeat center;
   }
-   
+  
 
   .is-active {
     animation-name: animate;
@@ -181,8 +187,10 @@ html,
     margin-bottom: 5px;
   }
   .quantity {
-    padding-top: 20px;
     margin-right: 60px;
+    /* text-align: center; */
+    align-items: center;
+    gap: 5px;
 
   }
   .quantity input {
@@ -194,6 +202,24 @@ html,
     font-weight: 300;
     padding: 10px 5px;
   }
+
+.quantity_button {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    border-radius: 20px;
+    background-color: rgba(54, 58, 61, 0.338);
+    border-radius: 50%;
+    color: rgb(254, 254, 254);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+    cursor: pointer;
+}
+.quantity_button:hover {
+    background-color: rgba(54, 58, 61, 0.784);
+}
 
    
   button:focus,
@@ -208,9 +234,18 @@ html,
     color: #43484D;
     font-weight: 300;
   }
+  .single-price {
+    width: 83px;
+    padding-top: 27px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
   @media (max-width: 800px) {
+    
     .shopping-cart {
-      width: 100%;
+      width: 100% !important;
       height: auto;
       overflow: hidden;
     }
@@ -604,4 +639,26 @@ html,
   
 .overlay.active {
     display: block; 
+  }
+  .loader {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 2s linear infinite;
+    z-index: 9999;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }

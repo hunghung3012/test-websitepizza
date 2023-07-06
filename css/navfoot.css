@@ -171,6 +171,9 @@ display: flex;
     margin-top: 10px;
     color: rgba(34, 30, 25, 0.821);
 }
+.option_account p:hover {
+    color: rgb(214, 105, 68);
+}
 @keyframes option_account {
     0% {
         height: 0px;
@@ -292,13 +295,15 @@ display: flex;
         flex: 1;
     }
     
+   
+    
     
 }
 /* CART Account*/
 /* Cart */
 .cart {
     width: 500px;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: calc(100%);

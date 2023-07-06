@@ -381,15 +381,27 @@ z-index: 900000;
     font-size: 15px;
 
 }
+.quality_price .quantity {
+    align-items: center;
+    gap: 5px;
+}
 
 .quantity_button {
-    width: 43px;
-    height: 43px;
-    font-size: 20px;
-    background-color: rgb(214, 219, 219);
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    border-radius: 20px;
+    background-color: rgba(54, 58, 61, 0.338);
+    border-radius: 50%;
+    color: rgb(254, 254, 254);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 2px;
+    cursor: pointer;
+}
+.quantity_button:hover {
+    background-color: rgba(54, 58, 61, 0.784);
 }
 .price {
     font-size: 20px;

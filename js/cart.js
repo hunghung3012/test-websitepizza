@@ -1,11 +1,17 @@
 
 
+window.addEventListener("load", ()=> {
+  setTimeout(function() {
+  document.querySelector('.loader').style.display = 'none';
+  document.querySelector('.all_container').style.filter = 'blur(0)';
+},500);
+})
+
 const list_cart = $('.shopping-cart');
 const sub_total = $('.sub_total .sub_total_item');
 const voucher = $('.coupon_total_item');
 const totalItem = $('.total_item');
 const buttonTotal =  $('.under_total button');
-const quantityInput = $$('.quantity input');
 const ship_item = $('.ship_item');
 const buttonCoupon = $('.coupon-input_button  button');
 const inputCoupon = $('.coupon-input_button input');
@@ -58,8 +64,12 @@ function renderListProduct(pizza, index) {
             <span class="subName_text">${pizza.product.subName}</span>
           </div>
         </div>
-          <div class="quantity">
-            <input type="number" name="name" value="${pizza.quantity_item}" min="1" onchange="updateQuantity(${index},event)">
+        <div class="single-price">${convert(pizza.product.price)}</div> 
+          <div class="quantity display_flex">
+          <p class="quantity_button down"><i class="fa-solid fa-minus"></i></p>
+            <input type="number" name="name" value="${pizza.quantity_item}" min="1" max="${pizza.product.quantity}"
+             onchange="updateQuantity(${index})">
+            <p class="quantity_button up"><i class="fa-solid fa-plus"></i></p>
           </div>
        
           <div class="total-price">${convert(totalProduct(pizza.product.price, pizza.quantity_item))}</div>
@@ -78,35 +88,45 @@ function renderListProduct(pizza, index) {
       vnd = vnd.replace('.', ',');
       return vnd;
   }
-    function updateQuantity(index, event) {
+    function updateQuantity(index) {
       var cartItems_temp = localStorage.getItem('cartItems');
       cartItems_temp = JSON.parse(cartItems_temp);
-      cartItems_temp[index].quantity_item = event.target.value;
-    
+      const input = $$('.quantity input')[index].value;
+      cartItems_temp[index].quantity_item = input;
       // Cập nhật giá trị mới vào localStorage
       localStorage.setItem('cartItems', JSON.stringify(cartItems_temp));
-    
       // Render lại danh sách giỏ hàng
       renderProduct(cartItems_temp, list_cart);
+      updownButton();
       total();
-    }
+
+        
     
-    // function deleteProduct(tag, id,event) {
-    //     console.log(event.target);
-    //     cartItems.forEach((item,index) =>{
-    //       var cartItems_temp;
-    //         if (item.product.id == id && item.product.tag == tag) {
-    //             cartItems_temp = localStorage.getItem('cartItems');
-    //             cartItemsArray = JSON.parse(cartItems_temp);
-    //             cartItemsArray.splice(index, 1); 
-    //             event.target.closest('.item').remove();
-    //             console.log(item.product.id +""+ id+""+  item.product.tag+""+ tag);
-    //             localStorage.setItem('cartItems', JSON.stringify(cartItemsArray));
-    //             // total();
-    //             return;
-    //         }
-    //     });
-    // }
+    }
+    updownButton() ;
+    function updownButton() {
+      //Button tăng giảm
+      const upButton = $$('.quantity_button.up');
+      const downButton = $$('.quantity_button.down');
+      const quantityInput = $$('.quantity input');
+      upButton.forEach((upButton, index)=>{
+    upButton.addEventListener('click', function() {
+    if (parseInt(quantityInput[index].value) < parseInt(quantityInput[index].max)) {
+      quantityInput[index].value = parseInt(quantityInput[index].value) + 1;
+      updateQuantity(index);
+      }
+    });
+  });
+  downButton.forEach((downButton, index)=>{
+  downButton.addEventListener('click', function() {
+    if (parseInt(quantityInput[index].value) > parseInt(quantityInput[index].min)) {
+      quantityInput[index].value = parseInt(quantityInput[index].value) - 1;
+      updateQuantity(index);
+      }
+});
+})
+    }
+
     function deleteProduct(tag, id, event) {
       console.log(event.target);
       for (let i = 0; i < cartItems.length; i++) {
@@ -116,8 +136,7 @@ function renderListProduct(pizza, index) {
           event.target.closest('.item').remove();
           console.log(item.product.id + "" + id + "" + item.product.tag + "" + tag);
           localStorage.setItem('cartItems', JSON.stringify(cartItems));
-          total();
-          return;
+          location.reload();
         }
       }
     }
@@ -202,13 +221,13 @@ $('.off').addEventListener('click', function(event) {
 });
 buttonTotal.addEventListener('click' ,(event)=> {
   let order_item = JSON.parse(localStorage.getItem('cartItems'));
-  console.log(order_item);
   if (order_item == null) {
     alert("Giỏ Hàng Đang Rỗng, Vui Lòng Thêm Sản Phẩm");
   }
   else {
   formDelivery.style.display = 'block';
   overlay.classList.add('active');
+  window.scrollTo(0,0);
 }
 });
 var order_list =[];
@@ -272,6 +291,10 @@ buttonSubmitDelivery.addEventListener('click', function(event) {
     order();
     client();
     localStorage.removeItem('cartItems'); 
+    setTimeout(() => {
+      location.reload();
+    }, 2000);
+    
   }
 });
 
@@ -299,7 +322,6 @@ function client() {
     total : $('.total_item').innerText
   };
   
-  console.log(list_client);
   list_client.push(inforClient);
   localStorage.setItem('client', JSON.stringify(list_client));
 }
@@ -333,7 +355,6 @@ inputs.forEach(function(input) {
       case 'number':
         isValid = validateInput(this, phoneRegex);
         break;
-      // Thêm các case cho các loại input khác (nếu cần)
     }
 
     if (!isValid) {
@@ -343,6 +364,7 @@ inputs.forEach(function(input) {
     }
   });
 });
+
 
 
 
