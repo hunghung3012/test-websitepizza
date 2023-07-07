@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="css/navfoot.css">
     <link rel="stylesheet" href="css/cart.css">
     <script src="https://kit.fontawesome.com/7a3de78148.js" crossorigin="anonymous"></script>
@@ -14,78 +14,85 @@
 <body>
    <!-- Menu and cart -->
    <div class="all_container"></div>
-   <div class="wrapper">
-    <div id="header">
-      <div class="more_menu">
-        <i class="fa-solid fa-bars bar_mobile_icon"></i>
-        <div class="select_nav_mobile">
-          <span class="remove"><i class="fa-solid fa-xmark"></i></span>
-          <a href="index.html"><p>Home</p></a>
-          <a  href="menu.html"><p>Menu</p></a>
-          <a  href="blog.html"><p>Blog</p></a>
-          <a  href="#"><p>Store</p></a>
-          <a  href="aboutus.html"><p>About us</p></a>
-        
+    <!-- Menu and cart -->
+    <div class="wrapper">
+      <div id="header">
+        <div class="more_menu">
+          <i class="fa-solid fa-bars bar_mobile_icon"></i>
+          <div class="select_nav_mobile">
+            <span class="remove"><i class="fa-solid fa-xmark"></i></span>
+            <a href="index.html"><p>Home</p></a>
+            <a  href="menu.html"><p>Menu</p></a>
+            <a  href="blog.html"><p>Blog</p></a>
+            <a  href="#"><p>Store</p></a>
+            <a  href="aboutus.html"><p>About us</p></a>
+          
+          </div>
         </div>
-      </div>
-      <a href="index.html" class="header_logo">
-        <i class="fa-solid fa-pizza-slice icon_logo"></i>
-        <span>PIZZA</span>
-      </a>
+        <a href="index.html" class="header_logo">
+          <i class="fa-solid fa-pizza-slice icon_logo"></i>
+          <span>PIZZA</span>
+        </a>
 
-      <ul class="main_menu">
-        <li class="menu_item">
-          <a href="index.html" >Home</a>
-        </li>
-        <li class="menu_item">
-          <a href="menu.html">Menu</a>
-        </li>
-        <li class="menu_item">
-          <a href="blog.html">Blog</a>
-        </li>
-        <li class="menu_item"><a href="#">Store</a></li>
-        <li class="menu_item"><a href="aboutus.html">About us</a></li>
-      </ul>
-      <div class="infor_account logo_cart">
-        <div class="quantity__cart">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <p class="quantity__cart-infor">0</p>
-        </div>
-        <div class="account"></div>
-      </div>
-    </div>
-
-    <div class="cart">
-      <div class="cart__header">
-        <div class="button__back">
-          <i class="fa-solid fa-arrow-left"></i>
-        </div>
-
-        <div class="cart__title">Giỏ hàng</div>
-
-        <div class="cart__quanlity">
-          SL : <span class="quanlity">0</span>
+        <ul class="main_menu">
+          <li class="menu_item">
+            <a href="index.html" >Home</a>
+          </li>
+          <li class="menu_item">
+            <a href="menu.html" class="active">Menu</a>
+          </li>
+          <li class="menu_item">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="menu_item"><a href="#">Store</a></li>
+          <li class="menu_item"><a href="aboutus.html">About us</a></li>
+        </ul>
+        <div class="infor_account logo_cart">
+          <div class="quantity__cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p class="quantity__cart-infor">0</p>
+          </div>
+          <div class="account">
+            <div class="option_account">
+              <a href="order.html" target="_blank">
+                <p>Đơn Hàng</p></a>
+              <a href="login.html">
+                <p>Đăng Xuất</p></a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="cart_body">
-        <div class="list__cart"></div>
-      </div>
-      <div class="cart__footer">
-        <div class="cart__total">
-          <span class="cart__total-title"> Tổng tiền : </span>
+      <div class="cart">
+        <div class="cart__header">
+          <div class="button__back">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
 
-          <span class="cart__total-content"> 0 VNĐ </span>
+          <div class="cart__title">Giỏ hàng</div>
+
+          <div class="cart__quanlity">
+            SL : <span class="quanlity">0</span>
+          </div>
         </div>
 
-        <a href="cart.html"
-          ><button class="button__buy">Xem chi tiết giỏ hàng</button></a
-        >
-      </div>
-    </div>
-  
+        <div class="cart_body">
+          <div class="list__cart"></div>
+        </div>
+        <div class="cart__footer">
+          <div class="cart__total">
+            <span class="cart__total-title"> Tổng tiền : </span>
 
-    <!-- Menu and cart END -->
+            <span class="cart__total-content"> 0 VNĐ </span>
+          </div>
+
+          <a href="cart.html"
+            ><button class="button__buy">Xem chi tiết giỏ hàng</button></a
+          >
+        </div>
+      </div>
+
+      <!-- Menu and cart END -->
    
   <div class="intro">
     <img

@@ -132,6 +132,7 @@ object-fit: cover;
 }
 .account {
     position: relative;
+    z-index: 999999999999999;
 }
 .option_account {
     width: 150px;
@@ -145,6 +146,7 @@ object-fit: cover;
     padding: 7px;
     display: none;
     animation: option_account 0.3s ease;
+    z-index: 999999999999999;
     /* overflow: hidden; */
 }
 .option_account.active {
@@ -303,7 +305,7 @@ display: flex;
 /* Cart */
 .cart {
     width: 500px;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     left: calc(100%);
@@ -671,7 +673,7 @@ display: flex;
     background-color: #E88735;
    bottom: 0;
    left: 0;
-    z-index: 9999;
+    z-index: 1;
     
    
 }
